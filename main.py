@@ -11,7 +11,6 @@ original_size = len(numbers)
 while(check):
     try:
         numbers.remove(delval)
-        check = True
     except:
         check = False
 if len(numbers) is original_size:
