@@ -6,5 +6,14 @@ delval = int(input('Enter the deletion value: '))
 # ******************************
 # Make your Code
 # ******************************
-
-print (numbers)
+check = True
+original_size = len(numbers)
+while(check):
+    try:
+        numbers.remove(delval)
+        check = True
+    except:
+        check = False
+if len(numbers) is original_size:
+    numbers.clear()
+print(numbers)
